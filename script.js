@@ -1,10 +1,27 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
+const floatingControls = [document.querySelector('.language-switcher'), menuToggle];
+let previousScrollPosition = window.scrollY;
 
 menuToggle.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
   menuToggle.setAttribute('aria-expanded', String(isOpen));
 });
+
+window.addEventListener('scroll', () => {
+  const currentScrollPosition = window.scrollY;
+  const scrollingDown = currentScrollPosition > previousScrollPosition && currentScrollPosition > 80;
+  if (scrollingDown) {
+    nav.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }
+  const atPageTop = currentScrollPosition <= 4;
+  floatingControls.forEach((control) => {
+    if (atPageTop) control.classList.remove('controls-hidden');
+    if (scrollingDown) control.classList.add('controls-hidden');
+  });
+  previousScrollPosition = currentScrollPosition;
+}, { passive: true });
 
 document.querySelectorAll('.main-nav a').forEach((link) => {
   link.addEventListener('click', () => {
@@ -211,5 +228,10 @@ function setLanguage(language) {
   document.querySelectorAll('.language-button').forEach((button) => button.classList.toggle('is-active', button.dataset.language === language));
 }
 
-document.querySelectorAll('.language-button').forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.language)));
+document.querySelectorAll('.language-button').forEach((button) => button.addEventListener('click', () => {
+  nav.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+  floatingControls.forEach((control) => control.classList.remove('controls-hidden'));
+  setLanguage(button.dataset.language);
+}));
 setLanguage(initialLanguage);

@@ -3,3 +3,4 @@
 @media(max-width:700px){.language-switcher{gap:0;right:50%;top:62px;transform:translateX(50%);white-space:nowrap}.language-switcher::before{margin-right:3px}.language-button{height:27px;width:27px}.language-flag{height:17px;width:17px}.menu-toggle{position:fixed;right:5vw;top:18px;z-index:30}}
 .language-switcher::before{content:var(--language-label,'Lingua')}
 @media(max-width:700px){.language-switcher{left:50%;position:fixed!important;right:auto;top:62px;transform:translateX(-50%);z-index:40}}
+.language-switcher,.menu-toggle{transition:opacity .25s ease,visibility .25s ease}.controls-hidden{opacity:0;pointer-events:none;visibility:hidden}
