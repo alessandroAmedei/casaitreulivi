@@ -9,6 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reviews.css">
+  <link rel="stylesheet" href="extras.css">
+  <link rel="stylesheet" href="sea.css">
+  <link rel="stylesheet" href="castle.css">
 </head>
 <body>
   <header class="site-header">
@@ -18,7 +22,9 @@
     </a>
     <nav class="main-nav" aria-label="Navigazione principale">
       <a href="#la-casa">La casa</a>
-      <a href="#esperienze">Dintorni</a>
+      <a href="#dintorni">Dintorni</a>
+      <a href="#mare">Mare</a>
+      <a href="#castello">Castello</a>
       <a href="#come-arrivare">Come arrivare</a>
     </nav>
     <a class="header-cta" href="https://www.airbnb.it/rooms/1229572590554872003" target="_blank" rel="noreferrer">Prenota <span>↗</span></a>
@@ -69,12 +75,58 @@
     </section>
 
     <section class="experience" id="esperienze">
-      <div class="experience-image"><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1229572590554872003/original/d4e5f08c-23cc-40ab-a883-e6dd09ba4597.jpeg" alt="Esterno di Casa I Tre Ulivi" loading="lazy"></div>
+      <div class="experience-image carousel" aria-label="Immagini dell'esterno di Casa I Tre Ulivi">
+        <img class="carousel-slide is-active" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1229572590554872003/original/d4e5f08c-23cc-40ab-a883-e6dd09ba4597.jpeg" alt="Esterno di Casa I Tre Ulivi" loading="lazy">
+        <img class="carousel-slide" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1229572590554872003/original/1d39daca-ff23-4fb7-ab4f-ffd6142c8678.jpeg" alt="Esterni di Casa I Tre Ulivi, foto Airbnb" loading="lazy">
+        <div class="carousel-status"><span class="current-slide">01</span><span>/ 02</span></div>
+      </div>
       <div class="experience-copy section-pad reveal"><div class="section-kicker">03 — Il ritmo giusto</div><h2>Fuori è<br><em>ancora più bello.</em></h2><p>Dalla casa si parte per passeggiate, borghi e tavole apparecchiate. Il resto lo decide la giornata.</p><ul><li><span>01</span> Colazioni all'aperto</li><li><span>02</span> Sentieri tra gli ulivi</li><li><span>03</span> Tramonti senza programmi</li></ul></div>
     </section>
 
+    <section class="surroundings section-pad" id="dintorni">
+      <div class="surroundings-heading"><div class="section-kicker">04 — Nei dintorni</div><h2>La montagna<br><em>di Carrara.</em></h2><p>A pochi passi dalla costa, il bianco delle Alpi Apuane disegna un paesaggio che non si dimentica.</p></div>
+      <div class="quarry-gallery reveal">
+        <figure class="quarry-main"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Carrara_marble_quarry_face.jpg/1280px-Carrara_marble_quarry_face.jpg" alt="Fronte di una cava di marmo di Carrara" loading="lazy"><figcaption>Cave di marmo · Alpi Apuane</figcaption></figure>
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Inside_a_Carrara_marble_quarry_6395.jpg/1280px-Inside_a_Carrara_marble_quarry_6395.jpg" alt="Interno di una cava di marmo di Carrara" loading="lazy"><figcaption>Il cuore della montagna</figcaption></figure>
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Marble_Quarry_near_Carrera.jpg/1280px-Marble_Quarry_near_Carrera.jpg" alt="Paesaggio delle cave vicino Carrara" loading="lazy"><figcaption>Il paesaggio di Carrara</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="sea section-pad" id="mare">
+      <div class="sea-heading"><div class="section-kicker">05 — Il mare della Versilia</div><h2>Sale sulla pelle,<br><em>vette all'orizzonte.</em></h2></div>
+      <div class="sea-layout reveal">
+        <figure class="sea-feature sea-carousel carousel"><img class="sea-slide carousel-slide is-active" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Apuane_e_Mare.jpg/1920px-Apuane_e_Mare.jpg" alt="Il mare della Versilia con le Alpi Apuane sullo sfondo" loading="lazy"><img class="sea-slide carousel-slide" src="https://www.vacanzeinversilia.com/images/territorio/big/riviera-apuana.jpg" alt="Riviera Apuana e mare della Versilia" loading="lazy"><img class="sea-slide carousel-slide" src="https://www.appartamentideamarina.it/immagini/pontile-marina-di-massa-toscana-appartamenti-deamarina.jpg" alt="Pontile di Marina di Massa sul mare della Versilia" loading="lazy"><img class="sea-slide carousel-slide" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Panoramic_picture_of_Marina_di_Pietrasanta_Beach_during_sunset.jpg/1920px-Panoramic_picture_of_Marina_di_Pietrasanta_Beach_during_sunset.jpg" alt="Tramonto sulla spiaggia di Marina di Pietrasanta" loading="lazy"><div class="carousel-status"><span class="current-slide">01</span><span>/ 04</span></div><figcaption>Il mare e le Alpi Apuane</figcaption></figure>
+        <div class="sea-side"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Marina_di_Pietrasanta_spiaggia.jpg/1920px-Marina_di_Pietrasanta_spiaggia.jpg" alt="Spiaggia di Marina di Pietrasanta in Versilia" loading="lazy"><figcaption>Marina di Pietrasanta</figcaption></figure><p>Una giornata può iniziare tra gli ulivi e finire con i piedi nella sabbia. La costa versiliese è lì, tra il blu del Tirreno e il bianco delle Apuane.</p></div>
+      </div>
+    </section>
+
+    <section class="reviews section-pad" id="recensioni">
+      <div class="reviews-intro reveal"><div class="section-kicker">04 — Dicono di noi</div><h2>Piccoli gesti,<br><em>grandi ricordi.</em></h2><a class="text-link" href="https://www.airbnb.it/rooms/1229572590554872003/reviews" target="_blank" rel="noreferrer">Leggi tutte le recensioni <span>↗</span></a></div>
+      <div class="reviews-content reveal reveal-delay">
+        <div class="rating"><strong>4,81</strong><span>/ 5</span><p>26 recensioni su Airbnb</p></div>
+        <div class="rating-bars"><div><span>5 stelle</span><i><b style="width:81%"></b></i><strong>81%</strong></div><div><span>4 stelle</span><i><b style="width:19%"></b></i><strong>19%</strong></div></div>
+        <div class="review-themes"><p>Le parole che tornano più spesso</p><div><span>Ospitalità</span><span>Pulizia</span><span>Spazi esterni</span><span>Posizione</span></div></div>
+      </div>
+    </section>
+
+    <section class="castle section-pad" id="castello">
+      <div class="castle-heading"><div class="section-kicker">06 — Una storia da vedere</div><h2>Il Castello<br><em>Malaspina.</em></h2><p>Custode della città di Massa, arroccato sulla collina e affacciato verso il mare.</p></div>
+      <div class="castle-carousel carousel reveal" aria-label="Immagini del Castello Malaspina di Massa">
+        <img class="castle-slide carousel-slide is-active" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Castello_Malaspina_2017.jpg/1920px-Castello_Malaspina_2017.jpg" alt="Castello Malaspina di Massa" loading="lazy">
+        <img class="castle-slide carousel-slide" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Castello_Malaspina_al_tramonto.jpg/1920px-Castello_Malaspina_al_tramonto.jpg" alt="Castello Malaspina al tramonto" loading="lazy">
+        <img class="castle-slide carousel-slide" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Castello_Malaspina_by_night.jpg/1920px-Castello_Malaspina_by_night.jpg" alt="Castello Malaspina illuminato di notte" loading="lazy">
+        <img class="castle-slide carousel-slide" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Castello_Malaspina_di_Massa%2C_Italia_%2801%29.JPG/1920px-Castello_Malaspina_di_Massa%2C_Italia_%2801%29.JPG" alt="Dettaglio del Castello Malaspina di Massa" loading="lazy">
+        <div class="carousel-status"><span class="current-slide">01</span><span>/ 04</span></div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contatti">
+      <div><div class="section-kicker">07 — Contatti</div><h2>Il tuo soggiorno<br><em>comincia qui.</em></h2></div>
+      <div class="contact-details"><p>Per informazioni sulla casa, disponibilità o consigli per il soggiorno, scrivi o chiamaci direttamente.</p><a href="mailto:alessandroamedei18@gmail.com">alessandroamedei18@gmail.com <span>↗</span></a><a href="tel:+393477742956">+39 347 774 2956 <span>↗</span></a></div>
+    </section>
+
     <section class="booking section-pad" id="prenota">
-      <div class="booking-heading"><div class="section-kicker">04 — Il tuo soggiorno</div><h2>Prenditi<br><em>il tuo tempo.</em></h2></div>
+      <div class="booking-heading"><div class="section-kicker">06 — Il tuo soggiorno</div><h2>Prenditi<br><em>il tuo tempo.</em></h2></div>
       <form class="booking-form" id="booking-form">
         <label>Check-in<input type="date" id="checkin" required></label>
         <label>Check-out<input type="date" id="checkout" required></label>
@@ -85,7 +137,7 @@
     </section>
   </main>
 
-  <footer class="site-footer" id="come-arrivare"><div class="footer-brand">Casa<br><em>I Tre Ulivi</em></div><div><span>Una casa italiana da abitare con lentezza.</span><a href="https://www.airbnb.it/rooms/1229572590554872003" target="_blank" rel="noreferrer">Airbnb ↗</a></div><small>© 2024 Casa I Tre Ulivi</small></footer>
+  <footer class="site-footer" id="come-arrivare"><div class="footer-brand">Casa<br><em>I Tre Ulivi</em></div><div><span>Il tuo angolo di Toscana, tra mare, Alpi Apuane e ulivi storici.</span><a href="mailto:alessandroamedei18@gmail.com">alessandroamedei18@gmail.com</a><a href="tel:+393477742956">+39 347 774 2956</a><a href="https://www.airbnb.it/rooms/1229572590554872003" target="_blank" rel="noreferrer">Airbnb ↗</a></div><small>© 2024 Casa I Tre Ulivi</small></footer>
   <script src="script.js"></script>
 </body>
 </html>

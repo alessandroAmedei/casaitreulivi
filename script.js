@@ -13,6 +13,19 @@ document.querySelectorAll('.main-nav a').forEach((link) => {
   });
 });
 
+document.querySelectorAll('.carousel').forEach((carousel) => {
+  const slides = carousel.querySelectorAll('.carousel-slide');
+  const slideNumber = carousel.querySelector('.current-slide');
+  let activeSlide = 0;
+
+  setInterval(() => {
+    slides[activeSlide].classList.remove('is-active');
+    activeSlide = (activeSlide + 1) % slides.length;
+    slides[activeSlide].classList.add('is-active');
+    slideNumber.textContent = String(activeSlide + 1).padStart(2, '0');
+  }, 2000);
+});
+
 const checkin = document.querySelector('#checkin');
 const checkout = document.querySelector('#checkout');
 const today = new Date().toISOString().split('T')[0];
