@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="extras.css">
   <link rel="stylesheet" href="sea.css">
   <link rel="stylesheet" href="castle.css">
+  <link rel="stylesheet" href="enhancements.css">
 </head>
 <body>
   <header class="site-header">
@@ -37,10 +38,13 @@
         <p class="eyebrow"><span></span> Un rifugio nel verde d'Italia</p>
         <h1>Il tempo<br><i>qui</i> rallenta.</h1>
         <p class="hero-text">Una casa intima, il profumo degli ulivi e giornate da vivere senza fretta.</p>
+        <p class="host-badge">Host Airbnb <span>·</span> 4,81/5 <span>·</span> 26 recensioni</p>
         <a class="button button-dark" href="#prenota">Scopri la casa <span>↓</span></a>
       </div>
-      <div class="hero-image-wrap reveal reveal-delay">
-        <img class="hero-image" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1229572590554872003/original/70da5a19-93bb-4ed9-8346-2e1bcd41e22f.jpeg?im_w=1200" alt="Esterno di Casa I Tre Ulivi immersa nel verde" loading="eager">
+      <div class="hero-image-wrap carousel reveal reveal-delay" aria-label="Immagini di Casa I Tre Ulivi">
+        <img class="hero-image carousel-slide is-active" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1229572590554872003/original/70da5a19-93bb-4ed9-8346-2e1bcd41e22f.jpeg?im_w=1200" alt="Esterno di Casa I Tre Ulivi immersa nel verde" loading="eager">
+        <img class="hero-image carousel-slide" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1229572590554872003/original/4720b6e3-402d-43a2-90c4-d7fac5609a09.jpeg" alt="Interno luminoso di Casa I Tre Ulivi" loading="lazy">
+        <div class="carousel-status"><span class="current-slide">01</span><span>/ 02</span></div>
         <div class="image-note"><span>01</span><span>La casa</span></div>
       </div>
       <div class="hero-stamp" aria-hidden="true"><span>slow</span><strong>living</strong><small>since 2024</small></div>
@@ -83,6 +87,21 @@
       <div class="experience-copy section-pad reveal"><div class="section-kicker">03 — Il ritmo giusto</div><h2>Fuori è<br><em>ancora più bello.</em></h2><p>Dalla casa si parte per passeggiate, borghi e tavole apparecchiate. Il resto lo decide la giornata.</p><ul><li><span>01</span> Colazioni all'aperto</li><li><span>02</span> Sentieri tra gli ulivi</li><li><span>03</span> Tramonti senza programmi</li></ul></div>
     </section>
 
+    <section class="reviews section-pad" id="recensioni">
+      <div class="reviews-intro reveal"><div class="section-kicker">04 — Dicono di noi</div><h2>Piccoli gesti,<br><em>grandi ricordi.</em></h2><a class="text-link" href="https://www.airbnb.it/rooms/1229572590554872003/reviews" target="_blank" rel="noreferrer">Leggi le recensioni su Airbnb <span>↗</span></a></div>
+      <div class="reviews-content reveal reveal-delay">
+        <div class="rating"><strong>4,81</strong><span>/ 5</span><p>26 valutazioni verificate su Airbnb</p></div>
+        <div class="rating-bars"><div><span>5 stelle</span><i><b style="width:81%"></b></i><strong>81%</strong></div><div><span>4 stelle</span><i><b style="width:19%"></b></i><strong>19%</strong></div></div>
+        <div class="review-carousel carousel" aria-label="Valutazioni Airbnb per categoria">
+          <div class="review-slide carousel-slide is-active"><strong>4,92</strong><span>Check-in</span><p>Una delle categorie più apprezzate dagli ospiti.</p></div>
+          <div class="review-slide carousel-slide"><strong>4,92</strong><span>Comunicazione</span><p>Valutazione media degli ospiti su Airbnb.</p></div>
+          <div class="review-slide carousel-slide"><strong>4,85</strong><span>Pulizia</span><p>Valutazione media degli ospiti su Airbnb.</p></div>
+          <div class="review-slide carousel-slide"><strong>4,81</strong><span>Rapporto qualità-prezzo</span><p>Valutazione media degli ospiti su Airbnb.</p></div>
+          <div class="carousel-status"><span class="current-slide">01</span><span>/ 04</span></div>
+        </div>
+      </div>
+    </section>
+
     <section class="surroundings section-pad" id="dintorni">
       <div class="surroundings-heading"><div class="section-kicker">04 — Nei dintorni</div><h2>La montagna<br><em>di Carrara.</em></h2><p>A pochi passi dalla costa, il bianco delle Alpi Apuane disegna un paesaggio che non si dimentica.</p></div>
       <div class="quarry-gallery reveal">
@@ -100,15 +119,6 @@
       </div>
     </section>
 
-    <section class="reviews section-pad" id="recensioni">
-      <div class="reviews-intro reveal"><div class="section-kicker">04 — Dicono di noi</div><h2>Piccoli gesti,<br><em>grandi ricordi.</em></h2><a class="text-link" href="https://www.airbnb.it/rooms/1229572590554872003/reviews" target="_blank" rel="noreferrer">Leggi tutte le recensioni <span>↗</span></a></div>
-      <div class="reviews-content reveal reveal-delay">
-        <div class="rating"><strong>4,81</strong><span>/ 5</span><p>26 recensioni su Airbnb</p></div>
-        <div class="rating-bars"><div><span>5 stelle</span><i><b style="width:81%"></b></i><strong>81%</strong></div><div><span>4 stelle</span><i><b style="width:19%"></b></i><strong>19%</strong></div></div>
-        <div class="review-themes"><p>Le parole che tornano più spesso</p><div><span>Ospitalità</span><span>Pulizia</span><span>Spazi esterni</span><span>Posizione</span></div></div>
-      </div>
-    </section>
-
     <section class="castle section-pad" id="castello">
       <div class="castle-heading"><div class="section-kicker">06 — Una storia da vedere</div><h2>Il Castello<br><em>Malaspina.</em></h2><p>Custode della città di Massa, arroccato sulla collina e affacciato verso il mare.</p></div>
       <div class="castle-carousel carousel reveal" aria-label="Immagini del Castello Malaspina di Massa">
@@ -116,7 +126,8 @@
         <img class="castle-slide carousel-slide" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Castello_Malaspina_al_tramonto.jpg/1920px-Castello_Malaspina_al_tramonto.jpg" alt="Castello Malaspina al tramonto" loading="lazy">
         <img class="castle-slide carousel-slide" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Castello_Malaspina_by_night.jpg/1920px-Castello_Malaspina_by_night.jpg" alt="Castello Malaspina illuminato di notte" loading="lazy">
         <img class="castle-slide carousel-slide" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Castello_Malaspina_di_Massa%2C_Italia_%2801%29.JPG/1920px-Castello_Malaspina_di_Massa%2C_Italia_%2801%29.JPG" alt="Dettaglio del Castello Malaspina di Massa" loading="lazy">
-        <div class="carousel-status"><span class="current-slide">01</span><span>/ 04</span></div>
+        <img class="castle-slide carousel-slide" src="https://www.tuscanypeople.com/wp-content/uploads/2021/06/castello_fosdinovo_aerial.jpg" alt="Castello Malaspina di Fosdinovo visto dall'alto" loading="lazy">
+        <div class="carousel-status"><span class="current-slide">01</span><span>/ 05</span></div>
       </div>
     </section>
 
