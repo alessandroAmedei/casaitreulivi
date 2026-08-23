@@ -115,7 +115,7 @@ Object.assign(translations.en, {
 });
 
 Object.assign(translations.en, {
-  'Casa I Tre Ulivi nasce per chi cerca spazio, luce e la semplicità delle cose fatte bene.': 'Casa I Tre Ulivi is made for those looking for space, light and the simplicity of things done well.', 'Grande spazio all\'aperto': 'Large outdoor space', 'Posto auto coperto': 'Covered parking space', 'Posti auto all\'aperto': 'Outdoor parking spaces', 'Per pranzi e cene all\'aperto': 'For outdoor lunches and dinners', 'Colazioni all\'aperto': 'Breakfast outdoors', '26 valutazioni verificate su Airbnb': '26 verified ratings on Airbnb', 'Per informazioni sulla casa, disponibilità o consigli per il soggiorno, scrivi o chiamaci direttamente.': 'For information about the home, availability or local tips, write or call us directly.', 'Apri su Google Maps': 'Open in Google Maps', 'Prenditi': 'Take', 'il tuo tempo.': 'your time.'
+  'Casa I Tre Ulivi nasce per chi cerca spazio, luce e la semplicità delle cose fatte bene.': 'Casa I Tre Ulivi is made for those looking for space, light and the simplicity of things done well.', 'Grande spazio all\'aperto': 'Large outdoor space', 'Posto auto coperto': 'Covered parking space', 'Posti auto all\'aperto': 'Outdoor parking spaces', 'Per pranzi e cene all\'aperto': 'For outdoor lunches and dinners', 'Colazioni all\'aperto': 'Breakfast outdoors', '26 valutazioni verificate su Airbnb': '26 verified ratings on Airbnb', 'Per informazioni sulla casa, disponibilità o consigli per il soggiorno, scrivi o chiamaci direttamente.': 'For information about the home, availability or local tips, write or call us directly.', 'Apri su Google Maps': 'Open in Google Maps', 'Prenditi': 'Take', 'il tuo tempo.': 'your time.', 'Scrivici su WhatsApp': 'Message us on WhatsApp'
 });
 
 const sharedTranslations = {
@@ -202,6 +202,12 @@ Object.assign(translations.uk, {
   'Custode della città di Massa, arroccato sulla collina e affacciato verso il mare.': 'Замок-охоронець міста Масса, розташований на пагорбі з видом на море.', 'Castello Malaspina di Massa': 'Замок Маласпіна в Массі', 'Dettaglio del Castello Malaspina di Massa': 'Деталь замку Маласпіна в Массі', 'Immagini di Casa I Tre Ulivi': 'Зображення Casa I Tre Ulivi', "Immagini dell'esterno di Casa I Tre Ulivi": 'Зображення зовнішнього вигляду Casa I Tre Ulivi', 'Valutazioni Airbnb per categoria': 'Оцінки Airbnb за категоріями',
   'Per informazioni sulla casa, disponibilità o consigli per il soggiorno, scrivi o chiamaci direttamente.': 'Щоб дізнатися більше про будинок, доступність або отримати поради для відпочинку, напишіть нам або зателефонуйте безпосередньо.', 'Apri su Google Maps': 'Відкрити в Google Maps', 'Sarai reindirizzato su Airbnb per completare la prenotazione.': 'Ви будете перенаправлені на Airbnb для завершення бронювання.', 'Prenditi': 'Приділи собі', 'il tuo tempo.': 'час.', 'Il tuo angolo di Toscana, tra mare, Alpi Apuane e ulivi storici.': 'Ваш куточок Тоскани між морем, Апуанськими Альпами та старовинними оливковими деревами.', 'Prenota': 'Забронювати', 'Verifica disponibilità': 'Перевірити доступність', '1 ospite': '1 гість', '2 ospiti': '2 гості', '3 ospiti': '3 гості', '4 ospiti': '4 гості'
 });
+Object.assign(translations.en, { 'Scrivici su WhatsApp': 'Message us on WhatsApp' });
+Object.assign(translations.de, { 'Scrivici su WhatsApp': 'Schreib uns auf WhatsApp' });
+Object.assign(translations.fr, { 'Scrivici su WhatsApp': 'Écrivez-nous sur WhatsApp' });
+Object.assign(translations.es, { 'Scrivici su WhatsApp': 'Escríbenos por WhatsApp' });
+Object.assign(translations.zh, { 'Scrivici su WhatsApp': '在 WhatsApp 联系我们' });
+Object.assign(translations.uk, { 'Scrivici su WhatsApp': 'Напишіть нам у WhatsApp' });
 
 const languageCodes = ['en', 'it', 'de', 'fr', 'es', 'zh', 'uk'];
 const urlLanguage = new URLSearchParams(window.location.search).get('lang') || window.location.pathname.match(/^\/(en|it|de|fr|es|zh|uk)(?:\/|$)/)?.[1];
