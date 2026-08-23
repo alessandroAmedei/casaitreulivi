@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Casa I Tre Ulivi</title>
+</head>
+<body>
+  <script>
+    const language = window.location.pathname.match(/^\/(en|it|de|fr|es|zh|uk)(?:\/|$)/)?.[1];
+    window.location.replace(`/?lang=${language || 'en'}`);
+  </script>
+</body>
+</html>

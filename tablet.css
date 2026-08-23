@@ -1,0 +1,70 @@
+@media (min-width:701px) and (max-width:1024px){
+  .site-header{height:76px;padding:0 6vw}
+  .main-nav{background:var(--paper);display:none;flex-direction:column;gap:20px;left:0;margin:0;padding:28px 6vw;position:absolute;top:76px;width:100%}
+  .main-nav.open{display:flex}
+  .main-nav .header-cta{align-self:flex-start;margin:12px 0 0;padding-bottom:6px;position:static}
+  .language-switcher{right:76px;top:18px}
+  .menu-toggle{background:none;border:0;display:block;padding:5px;position:relative;z-index:21}
+  .menu-toggle span{background:var(--ink);display:block;height:1px;margin:5px;width:20px}
+  .header-cta{margin-left:auto;margin-right:12px}
+  .hero{min-height:0;padding:125px 6vw 50px}
+  .hero-copy{padding-top:25px;width:100%}
+  .hero h1{font-size:clamp(65px,10vw,92px)}
+  .hero-image-wrap.carousel{bottom:auto;height:450px;left:auto;margin-top:48px;position:relative;right:auto;top:auto;width:100%}
+  .hero{overflow:hidden}
+  .hero-stamp{bottom:350px;right:4%;top:auto}
+  .section-pad{padding-left:6vw;padding-right:6vw}
+  .intro{padding-bottom:80px;padding-top:80px}
+  .intro-content{display:block;margin-top:38px}
+  .intro-body{padding-top:35px}
+  .details-row{grid-template-columns:repeat(4,1fr);margin-top:70px}
+  .gallery{padding-bottom:80px;padding-top:70px}
+  .gallery-grid{gap:8px;grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}
+  .experience{display:block}
+  .experience-image{min-height:430px}
+  .experience-copy{padding-bottom:75px;padding-top:70px}
+  .experience-copy h2{margin-top:35px}
+  .experience-copy ul{margin-top:45px}
+  .reviews{display:block;padding-bottom:80px;padding-top:80px}
+  .reviews-intro h2{font-size:52px;margin:35px 0 28px}
+  .reviews-content{border-left:0;border-top:1px solid var(--line);margin-top:62px;padding-left:0;padding-top:30px}
+  .rating-bars,.review-carousel{max-width:100%}
+  .surroundings{padding-bottom:80px;padding-top:80px}
+  .surroundings-heading{display:block}
+  .surroundings-heading h2{font-size:52px;margin-top:35px}
+  .surroundings-heading p{font-size:19px;margin-top:28px}
+  .quarry-gallery{grid-template-columns:1fr 1fr;margin-top:45px}
+  .quarry-gallery .quarry-main{grid-column:1 / -1}
+  .sea{padding-bottom:80px;padding-top:80px}
+  .sea-heading{display:block}
+  .sea-heading h2{font-size:52px;margin-top:35px}
+  .sea-layout{display:block;margin-top:45px}
+  .sea-feature{height:360px}
+  .sea-side figure{height:280px;margin-top:38px}
+  .castle{padding-bottom:80px;padding-top:80px}
+  .castle-heading{display:block}
+  .castle-heading h2{font-size:52px;margin-top:35px}
+  .castle-heading p{font-size:19px;margin-top:28px}
+  .castle-carousel{height:400px;margin-top:45px}
+  .contact{display:block;padding-bottom:80px;padding-top:80px}
+  .contact h2{font-size:52px;margin-top:35px}
+  .contact-details{border-left:0;border-top:1px solid var(--line);margin-top:55px;padding-left:0;padding-top:28px}
+  .directions{display:block;padding-bottom:80px;padding-top:80px}
+  .directions-heading h2{font-size:52px;margin-top:35px}
+  .directions-content{border-left:0;border-top:1px solid var(--line);margin-top:55px;padding-left:0;padding-top:28px}
+  .directions + .booking{margin-top:35px}
+  .booking{display:block;padding-bottom:70px;padding-top:80px}
+  .booking-heading h2{margin-top:35px}
+  .booking-form{margin-top:52px}
+  .form-note{margin-top:18px}
+  .site-footer{align-items:start;display:flex;flex-direction:column;padding:42px 6vw 30px}
+  .site-footer small{margin-top:20px}
+}
+@media (min-width:701px) and (max-width:1024px){
+  .language-switcher{gap:0;right:50%;top:66px;transform:translateX(50%);white-space:nowrap}
+  .language-switcher::before{margin-right:5px}
+  .language-button{height:29px;width:29px}
+  .language-flag{height:17px;width:17px}
+  .menu-toggle{position:fixed;right:5vw;top:18px;z-index:30}
+  .main-nav{top:110px}
+}
